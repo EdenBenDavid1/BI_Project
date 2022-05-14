@@ -31,5 +31,5 @@ order by amountPerBedBath desc
 select houses_prices_id, price, bedrooms, yr_built, yr_renovated, 
 case when yr_renovated=0 then 0 else yr_renovated-yr_built end as numYearsTillRenovated
 from Houses_FACT
-order by price desc,numYearsTillRenovated desc
+order by price desc, numYearsTillRenovated desc
 
